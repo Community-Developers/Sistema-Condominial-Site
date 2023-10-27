@@ -1,0 +1,90 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background: linear-gradient(244deg, #72ACC6 7.32%, #719EB8 39.69%, #34546E 64.56%);
+
+}
+
+.frame-out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1700px;
+    height: 900px;
+
+    flex-direction: column;
+
+    background: url('/assets/background-admin.jpg');
+
+    background-position: center;
+
+    border-radius: 40px;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+
+}
+
+.frame-in {
+    display: flex;
+
+    width: 1500px;
+    height: 700px;
+    border-radius: 40px;
+    background: #FFFFFF;
+    border: 2px solid #234159;
+
+    .top {
+        width: 100%;
+        height: 10%;
+
+        display: flex;
+
+        span {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex: 50%;
+
+            margin-top: 50px;
+            margin-left: 50px;
+
+
+            color: #212529;
+
+            font-family: Nunito Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            text-transform: capitalize;
+        }
+        .top-right{
+            flex: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                margin-right: 60px;
+                background: none;
+                border: none;
+            }
+
+            button .img{
+                max-width: 35px;
+                max-height: 35px;
+            }
+        }
+    }
+}
