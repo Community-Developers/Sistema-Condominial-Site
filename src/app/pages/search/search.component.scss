@@ -10,33 +10,57 @@
 
 }
 
+
 .frame-out {
     display: flex;
     justify-content: center;
     align-items: center;
 
+    position: absolute;
+    z-index: 1;
+    
+    border-radius: 40px;
+
     width: 1700px;
     height: 900px;
 
-    flex-direction: column;
+    .wall {
+        position: absolute;
+        z-index: -1;
+        border-radius: 40px;
 
-    background: url('/assets/background-admin.jpg');
+        width: 100%;
+        height: 100%;
+        background: url('/assets/background-admin.jpg');
 
-    background-position: center;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        border: 1px solid #234159;
 
-    border-radius: 40px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        border-radius: 40px;
+        border:1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+        .back {
+            width: 99%;
+            height: 99%;
+            border-radius: 40px;
+            background: url('/assets/background-admin.jpg');
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
 
-
+            box-sizing: border-box;
+        }
+    }
 }
 
 .frame-in {
     display: flex;
 
-    width: 1500px;
-    height: 700px;
+    width: 80%;
+    height: 70%;
     border-radius: 40px;
     background: #FFFFFF;
     border: 2px solid #234159;
@@ -51,7 +75,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-            flex: 50%;
+            flex: 49%;
 
             margin-top: 50px;
             margin-left: 50px;
@@ -66,13 +90,14 @@
             line-height: 24px;
             text-transform: capitalize;
         }
-        .top-right{
-            flex: 50%;
+
+        .top-right {
+            flex: 49%;
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
 
-            button{
+            button {
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
@@ -81,10 +106,28 @@
                 border: none;
             }
 
-            button .img{
+            button .img {
                 max-width: 35px;
                 max-height: 35px;
             }
         }
     }
+}
+
+.admin-menu {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }

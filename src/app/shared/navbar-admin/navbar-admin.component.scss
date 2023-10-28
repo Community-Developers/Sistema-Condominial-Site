@@ -1,0 +1,112 @@
+:host {
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #1F2F3E;
+    border-radius: 40px 0px 0px 40px;
+
+    height: 100%;
+    width: 100%;
+
+    .section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .profile-admin {
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+
+        span {
+            color:#33BFBF;
+            font-family: Podkova;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40.95px;
+            letter-spacing: 3px;
+        }
+
+        .admin {
+            margin-top: 18px;
+        }
+
+        .name-admin {
+            display: flex;
+            align-items: flex-end;
+            font-size: 16px;
+        }
+
+
+        img {
+            margin-top: 15px;
+            width: 110px;
+            height: 110px;
+            border-radius: 140px;
+            max-width: 100px;
+            max-height: 100px;
+        }
+    }
+
+    .menu-admin {
+        display: flex;
+        justify-content: center;
+
+        height: 75%;
+        width: 100%;
+
+        ul {
+            margin-top: 0px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            color: #FFF;
+
+            width: 100%;
+            height: 100%;
+
+            li {
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    border-top: 2px solid #304050;
+                    padding-top: 20px;
+
+                    width: 100%;
+                    height: 100%;
+
+                }
+
+                a {
+
+                    color: #FFF;
+
+                    text-decoration: none;
+
+                    text-align: center;
+                    font-family: Nunito Sans;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 21px;
+                    text-transform: capitalize;
+                    outline: none;
+
+
+                }
+
+            }
+
+
+        }
+    }
+
+}
