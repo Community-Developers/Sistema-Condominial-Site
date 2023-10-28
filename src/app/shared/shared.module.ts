@@ -8,6 +8,9 @@ import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
   declarations: [
     NavbarAdminComponent
   ],
+  exports: [
+    NavbarAdminComponent
+  ],
   imports: [
     CommonModule
   ]
